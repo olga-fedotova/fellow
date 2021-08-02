@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fellow</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css1.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container-fluid header">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="#"><img src="img/logo1.png"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-item nav-link text-uppercase hover_menu" href="#about_us">About<span><img src="img/hover_menu.png"/></span></a>
+							<a class="nav-item nav-link text-uppercase hover_menu" href="#how_it_work">How it work<span><img src="img/hover_menu.png"/></span></a>
+							<a class="nav-item nav-link text-uppercase hover_menu" href="#partners">Partners<span><img src="img/hover_menu.png"/></span></a>
+							<a class="nav-item nav-link text-uppercase hover_menu" href="#donate">Donate<span><img src="img/hover_menu.png"/></span></a>
+							<a class="nav-item nav-link text-uppercase hover_menu" href="#contacts">Contacts<span><img src="img/hover_menu.png"/></span></a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<script>
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.header').addClass('fixed');
+			} else {
+				$('.header').removeClass('fixed');
+			}
+		});
+	</script>
+</header>
+	<section class="main">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="title2">Ask me<br>how to find<br>a friend</h2>
+					<img class="icons" src="img/google-play.png"><img class="icons" src="img/app-store.png">
+				</div>
+			</div>
+			 <img style="width:100%;" src="img/bg.png">
+		</div>
+	</section>
+	<section class="about" id="about_us">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8 col-md-2">
+					<h1 class="title1">About us</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="about_bg">
+					<p>We represent communitie of people<br>who looks for pet. Fellow means a baddy,<br>a friend, a mate and a support. We hope<br>that our app helps everybody find a friend.</p>
+				</div>
+				<img class="img_bg2" src="img/img_bg2.png">
+				<img class="pattern" src="img/img_pattern.png">
+				</div>
+			</div>
+			<script>
+			(function () {
+				var img_bg2 = document.querySelector('.about');
+				var observer = new IntersectionObserver(entries => {
+					entries.forEach(entry => {
+						var entrySquare = entry.target.querySelector('.img_bg2');
+						if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+						return;
+					}
+					if (entry.isIntersecting) {
+						entrySquare.classList.add('appearance1');
+						return;
+					}
+					entrySquare.classList.remove('appearance1');
+				});
+			});
+			observer.observe(img_bg2);
+		})();
+		</script>
+	</section>
+	<section class="how" id="how_it_work">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="title3">How it works</h1>
+				</div>
+			</div>
+			<div class="row animation1">
+				<div class="col-lg-2">
+					<h1 class="title4">1/</h1>
+				</div>
+				<div class="col-lg-6">
+					<p class="description1">Download the app from AppStore or Google Play.<br>If you to find a pet you could choose needed category<br>by filtres. Wnen you find the one you could chat with<br>a owner and book a time when you want to take a pet.</p>
+				</div>
+				<div class="col-lg-4">
+					<img class="img_right1" src="img/img1.png">
+				</div>
+			</div>
+			<div class="row animation2">
+				<div class="col-lg-4">
+					<img class="img_left" src="img/img2.png">
+				</div>
+				<div class="col-lg-2">
+					<h1 class="title4">2/</h1>
+				</div>
+				<div class="col-lg-6">
+					<p class="description1">If you want to ask a help to find a new home for homeless pets you could create a card, take a photo and write some info about pet. So you add commercial to promote your ad.</p>
+				</div>
+		</div>
+			<div class="row animation3">
+				<div class="col-lg-2">
+					<h1 class="title4">3/</h1>
+				</div>
+				<div class="col-lg-6">
+					<p class="description1">You can take care about your own pet asking help<br>a vet, or you can donate to shelters and help other pets.</p>
+				</div>
+				<div class="col-lg-4">
+					<img class="img_right2" src="img/img3.png">
+				</div>
+			</div>
+		</div>
+		<script>
+		(function () {
+			var img_right1 = document.querySelector('.animation1');
+			var observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					var entrySquare = entry.target.querySelector('.img_right1');
+					if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+						return;
+					}
+					if (entry.isIntersecting) {
+						entrySquare.classList.add('appearance2');
+						return;
+					}
+					entrySquare.classList.remove('appearance2');
+				});
+			});
+			observer.observe(img_right1);
+		})();
+	</script>
+	<script>
+	(function () {
+		var img_right2 = document.querySelector('.animation3');
+		var observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				var entrySquare = entry.target.querySelector('.img_right2');
+				if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+					return;
+				}
+				if (entry.isIntersecting) {
+					entrySquare.classList.add('appearance3');
+					return;
+				}
+				entrySquare.classList.remove('appearance3');
+			});
+		});
+		observer.observe(img_right2);
+	})();
+</script>
+<script>
+(function () {
+	var img_left = document.querySelector('.animation2');
+	var observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			var entrySquare = entry.target.querySelector('.img_left');
+			if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+				return;
+			}
+			if (entry.isIntersecting) {
+				entrySquare.classList.add('appearance4');
+				return;
+			}
+			entrySquare.classList.remove('appearance4');
+		});
+	});
+	observer.observe(img_left);
+})();
+</script>
+	</section>
+	<section class="who">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="title1">Who's it for?</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="persons" src="img/img1.1.png">
+				</div>
+				<div class="col-lg-4">
+					<img class="persons" src="img/img2.1.png">
+				</div>
+				<div class="col-lg-4">
+					<img class="persons" src="img/img3.1.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+						<h2 class="title2"style="font-size:36px; margin-left:20px;">Volonteers</h2>
+				</div>
+				<div class="col-lg-4">
+						<h2 class="title2" style="font-size:36px; margin-left:20px;">Future owner</h2>
+				</div>
+				<div class="col-lg-4">
+						<h2 class="title2" style="font-size:36px; margin-left:20px;">Professionals</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+						<p style="margin-left:20px; margin-right:20px;">If you are not indifferent to homeless animals, you can easily help them by creating an ad in the application. So the pet will easily find a new home.</p>
+				</div>
+				<div class="col-lg-4">
+						<p style="margin-left:20px; margin-right:20px;">If you are just looking for a new friend, in the application you can easily find a suitable pet according to your parameters.</p>
+				</div>
+				<div class="col-lg-4">
+						<p style="margin-left:20px; margin-right:20px;">If you work as a veterinarian or a breeder, then you can help the new owners of pets to take care of them properly.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="partners" id="partners">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="title1">Our partners</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12" style="text-align:center; padding-bottom:50px; padding-top:50px;">
+					<p>Partners of the program are companies that provide goods and services for project participants on special favorable terms.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="overlay_container">
+							<img src="img/partner1.png">
+							<div class="overlay">
+								<span>Petshop sells pet food, supplies, accessories and other products for caring for them.</span>
+								<div class="button"><button type="button" class="btn btn-sm">Get a discount</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="overlay_container">
+							<img src="img/partner2.png">
+							<div class="overlay">
+								<span>It's a dog walking service. There is you can hire a dog walker for your dog.</span>
+								<div class="button"><button type="button" class="btn btn-sm">Get a discount</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="overlay_container">
+							<img src="img/partner3.png">
+							<div class="overlay">
+								<span>This is a service where you can find a pet and donate money for other pets.</span>
+								<div class="button"><button type="button" class="btn btn-sm">Get a discount</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="overlay_container">
+							<img src="img/partner4.png">
+							<div class="overlay">
+								<span>You can use a hotel for pets in the meantime, you need to be away for a few days.</span>
+								<div class="button"><button type="button" class="btn btn-sm">Get a discount</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 text-center" style="padding-top:30px;">
+						<img src="img/line.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12" style="text-align:center; padding-bottom:50px; padding-top:50px;">
+						<p>You can offer your company as a member of the partner network. To do this, leave a request.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<button type="button" data-toggle="modal" data-target="#partners_form" class="btn btn-lg">Make a request</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="partners_form" tabindex="-1" role="dialog" aria-labelledby="partners_form_title" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="ModalLongTitle">Please, fill the form</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <!--не понимаю, почему значок close улетел куда-то вверх от формы-->
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-4">
+									<input type="text" class="form-control" style="height:58px; width: 90%; border:none;" id="inlineFormInputName" placeholder="Your name">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<input type="email" class="form-control" style="height:58px; width: 90%; border:none;" id="inlineFormInputEmail" placeholder="Email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<input type="phone" class="form-control" style="height:58px; width: 90%; border:none;" id="inlineFormInputPhone" placeholder="Phone">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<input type="text" class="form-control" style="height:120px; width: 90%; border:none;" id="inlineFormInputName" placeholder="Comment">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="agree" id="check1">
+										<label class="form-check-label">I agree to the Privacy Policy</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<button type="button" class="btn btn-lg send">Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="help" id="donate">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="title1">How you can help</h1>
+			</div>
+		</div>
+		<div class="row help_bg">
+			<div class="col-lg-8 offset-md-1">
+				<div class="row">
+					<div class="col-lg-6">
+						<ul class="ul_help1">
+							<li class="list1"><p class="list_text">Use an app and help pets</p></li>
+							<li class="list2"><p class="list_text">Share with your friend</p></li>
+							<li class="list3"><p class="list_text">Make a donation</p></li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<ul class="ul_help2">
+							<li class="list4"><p class="list_text">You can enter any amount and pay using any transfer service.</p></li>
+							<li class="list5"><p class="list_text"><form>
+								<div class="form-row align-items-center">
+									<div class="col-lg-3">
+										<label class="sr-only" for="inlineFormInput"></label>
+										<input type="text" class="form-control" style="height:50px; width:170px; border:none;" id="inlineFormInputName" placeholder="Sum">
+									</div>
+									<div>
+										<select id="inlineFormSelect" style="height:50px; width:130px; border:none; padding-left: 90px;">
+											<option selected style="width:40px;">$</option>
+											<option>₽</option>
+											<option>€</option>
+											<option>Br</option>
+											<option>₴</option>
+										</select>
+									</div>
+									<div class="col-2">
+										<button type="submit" class="btn btn-lg" style="background-color: rgb(240, 158, 48); color: #EEEBD8; border-radius: 0 30px 30px 0; margin-left: -23px; padding-left: 40px; height: 50px; padding-right: 40px;">Donate</button>
+									</div>
+								</div>
+							</form></p>
+						</li>
+						<li class="list6"><div class="wrapper">
+							<div>
+								<label class="switch">
+									<input type="checkbox">
+									<span class="slider round"></span>
+									<span class="absolute-no"></span>
+								</label>
+							</div>
+							<div class="agreement" style="white-space:nowrap;">I accept Payment Confirmation</div>
+						</div>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="contacts">
+		<div class="container-fluid">
+			<div class="row justify-content-between">
+				<div class="col-lg-3">
+					<img class="logo_dark" src="img/logo_dark.png">
+				</div>
+				<div class="col-lg-3">
+					<ul class="footer_menu">
+						<li><a href="#about_us">About us</a></li>
+						<li><a href="#how_it_work">How it works</a></li>
+						<li><a href="#partners">Partners</a></li>
+						<li><a href="#donate">Donate</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<ul class="footer_menu">
+						<li>Policy</li>
+						<li>Payment Confirmation</li>
+						<li>Partners agreement</li>
+						<li>
+							<ul class="socialmedia">
+								<li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+								<li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+								<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+								<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<p class="info_footer">8 900 999 77 88</p>
+					<p class="info_footer">44, Nevskii Prospect<br>St. Petersburg<br>Russia</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!-- <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet"> -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script> -->
+</body>
+</html>
